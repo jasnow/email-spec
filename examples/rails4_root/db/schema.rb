@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20141119224309) do
     t.datetime "locked_at"
     t.datetime "failed_at"
     t.string   "locked_by"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.string   "queue"
   end
 

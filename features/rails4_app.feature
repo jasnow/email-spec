@@ -11,6 +11,7 @@ I want to verify that the example rails 4 app runs all of it's features as expec
 
   Scenario: regression test
     Given the rails4 app is setup with the latest email steps
+    When I run "bundle install" in the rails4 app
     When I run "bundle exec rake db:migrate RAILS_ENV=test" in the rails4 app
     And I run "bundle exec cucumber features -q --no-color" in the rails4 app
     Then I should see the following summary report:
