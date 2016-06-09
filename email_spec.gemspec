@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.add_dependency "mail", "~> 2.6.3"
 
   s.add_development_dependency "rake", ">= 0.8.7"
-  s.add_development_dependency "cucumber", '~> 1.3.17'
+  s.add_development_dependency "cucumber"
   s.add_development_dependency "actionmailer", "~> 4.2"
   s.add_development_dependency "rack-test"
   s.add_development_dependency "rspec", '~> 3.1'
